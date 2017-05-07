@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I Saw It</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="homepage.html">ISawIt</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="processPage.html">How it works?</a></li>
+                        <!--<li><a href="#">Collaboration</a></li>-->
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="aboutUsPage.html">About us</a></li>
+                        <!--<li><a href="#">Contact us</a></li>-->
+                        <li><a href="signInPage.html">Login</a></li>
+                        
+                        <!--<li><a href="/">Sign Up</a></li>-->
+                        <!--<li><a href="/">Logout</a></li>-->
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+	<div class="container">
+		<form class="form-horizontal">
+			<fieldset>
+			<br>
+			<!-- Form Name -->
+			<legend><h1>My Profile</h1></legend>
+			<div class="alert alert-danger alert-dismissable" id="noti">
+
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <label id="notification"></label>
+            </div>
+
+			<!-- Name-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="name">Name</label>  
+			  <div class="col-md-4">
+			  <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md bobo" required>
+			    
+			  </div>
+			</div>
+
+			<!-- Gender-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="gender">Gender</label>  
+			  <div class="col-md-4">
+			  <input id="gender" name="gender" type="text" placeholder="Female" class="form-control input-md bobo" required>
+			    
+			  </div>
+			</div>
+
+			<!-- DOB-->
+			<div class="form-group ">
+			  <label class="col-md-4 control-label" for="dob">DOB</label>  
+			  <div class="col-md-4">
+			  <input id="dob" name="dob" type="text" placeholder="01/02/2017" class="form-control input-md bobo" required>
+			    
+			  </div>
+			</div>
+
+			<!-- National ID number -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="id">National ID number</label>  
+			  <div class="col-md-4">
+			  <input id="id" name="id" type="text" placeholder="123456789" class="form-control input-md bobo" required>
+			    
+			  </div>
+			</div>
+
+			<!-- Contact number -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="contact_no">Contact number</label>  
+			  <div class="col-md-4">
+			  <input id="contact_no" name="contact_no" type="text" placeholder="0992369809" class="form-control input-md bobo" required>
+			    
+			  </div>
+			</div>
+
+			<!-- Email -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="email">Email</label>  
+			  <div class="col-md-4">
+			  <input id="email" name="email" type="email" placeholder="13477068926@163.com" class="form-control input-md bobo" required>
+			    
+			  </div>
+			</div>
+
+
+		<!-- Select Basic -->
+		<!-- 	<div class="form-group">
+			  <label class="col-md-4 control-label" for="selectbasic">country</label>
+			  <div class="col-md-4">
+			    <select id="selectbasic" name="selectbasic" class="form-control">
+			      <option value="1">1</option>
+			      <option value="2">2</option>
+			    </select>
+			  </div>
+			</div> -->
+
+		<!-- File Button --> 
+		<!-- 	<div class="form-group">
+			  <label class="col-md-4 control-label" for="filebutton">upload photo</label>
+			  <div class="col-md-4">
+			    <input id="filebutton" name="filebutton" class="input-file" type="file">
+			  </div>
+			</div> -->
+
+			<!-- Edit Button -->
+		<!-- 	<div class="form-group">
+			  <label class="col-md-4 control-label" for="singlebutton"></label>
+			  <div class="col-md-4">
+			    <button id="editBtn" name="editBtn" class="btn btn-primary" >Edit</button>
+			  </div>
+			</div> -->
+
+			<!-- Address -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="address">Address</label>
+			  <div class="col-md-4">                     
+			    <textarea class="form-control bobo" id="address" name="address" bobo placeholder="12A Luoyu Rd., Wuhan, Hubei, P.R.C" required></textarea>
+			  </div>
+			</div>
+
+			<!-- Submit Button -->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="singlebutton"></label>
+			  <div class="col-md-4">
+			     <button id="editBtn" name="editBtn" class="btn btn-primary" >Edit</button>
+			    <button id="submitBtn" name="submitBtn" class="btn btn-primary bobo" type="submit">Save & change</button>
+			  </div>
+			</div>
+
+			</fieldset>
+		</form>
+
+	</div>
+
+ 	<script type="text/javascript" src="assets/js/viewProfile.js"></script>
+</body>
+</html>
+
+
+<!-- <style type="text/css" >
+
+		.form-control[disabled]{
+			background-color: rgba(255,255,255,.15);
+			border: none;
+		}
+
+	</style> -->
+

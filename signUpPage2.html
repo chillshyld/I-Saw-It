@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <title>I Saw It</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="homepage.html">ISawIt</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="processPage.html">How it works?</a></li>
+                        <!--<li><a href="#">Collaboration</a></li>-->
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="aboutUsPage.html">About us</a></li>
+                        <!--<li><a href="#">Contact us</a></li>-->
+                        <li><a href="signInPage.html">Login</a></li>
+                        
+                        <!--<li><a href="/">Sign Up</a></li>-->
+                        <!--<li><a href="/">Logout</a></li>-->
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+	<h1>Sign up</h1>
+	<form>
+		<div class="box">
+			<label for="firstName">First name:</label>
+			<input type="text" placeholder="First name" id="firstName" name="firstName" >
+		</div>
+
+		<div>
+			<label for="lastName">Last name:</label>
+			<input type="text" placeholder="Last name" id="lastName" name="lastName" >
+		</div>
+
+		<div>
+			<label>Gender:</label>
+			<select name="gender">
+				<option value="-">Select gender</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select>
+
+			<label for="dob"> DOB:</label>
+			<input type="date" name="dob" id="dob">
+		</div>
+
+		<div>
+			<label for="id_no">National ID number:</label>
+			<input type="text" id="id_no" name="id_no" >
+		</div>
+
+		<div>
+			<label for="contact_no">Contact number:</label>
+			<input type="text" name="contact_no" id="contact_no" required>
+			<label id="check_contact"></label>
+		</div>
+
+		<div>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" >
+			<label id="check_email"></label>
+		</div>
+
+		<div>
+			<label for="address">Address</label>
+			<br>
+			<textarea name="address" rows="3" cols="30" ></textarea>
+		</div>
+
+		<div>
+			<label for="username">Username:</label>
+			<input  id="username" type="text" name="username" >
+			<label id="check_username"></label>
+		</div>
+
+		<div>
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password">
+			<label id="check_password"></label>
+			<br>
+			<label for="re_password">Re-enter Password:</label>
+			<input type="password" name="re_password" id="re_password" >
+			<label id="check_re_password"></label>
+		</div>
+
+		<div>
+			<input type="checkbox" name="agreement" id="agreement" value="yes">
+			<label>I agree in term of agreement.</label>
+		</div>
+
+		<button id="submitBtn">Submit</button>
+	</form>
+	
+	
+	<script type="text/javascript" src="signUp.js"></script>
+</body>
+</html>
+
+<!-- //match email address
+var emailRegex = '^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$'; 
+
+//match credit card numbers
+var creditCardRegex = '^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35d{3})d{11})$'; 
+
+//match username
+var usernameRegex = '/^[a-z0-9_-]{3,16}$/'; 
+
+//match password
+var passwordRegex = '/^[a-z0-9_-]{6,18}$/'; 
+
+//Match 8 to 15 character string with at least one upper case letter, one lower case letter, and one digit (useful for passwords).
+var passwordStrengthRegex = /((?=.*d)(?=.*[a-z])(?=.*[A-Z]).{8,15})/gm; 
+
+//match elements that could contain a phone number
+var phoneNumber = /[0-9-()+]{3,20}/;  -->
