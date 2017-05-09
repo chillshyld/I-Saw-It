@@ -19,7 +19,7 @@
         <script type="text/javascript" src="assets/js/navbar.js"></script>
 
     </head>
-    <body>
+    <body">
     <!-- Nav bar start here -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -39,7 +39,7 @@
     <!-- Nav bar End here -->
 
     <!-- Start adding your link CSS files here -->
-    
+    <link rel="stylesheet" type="text/css" href="assets/css/viewPost.css">
 
     <!-- Linking End here -->
 
@@ -49,53 +49,129 @@
 
 
 
+        
 
-    <div class="left-panel">
-        <!-- <div class="col-xs-12 col-sm-6 col-lg-8"> -->
-    	    <!-- <div class="panel"> -->
-    		    <!-- <div class="panel-body"> -->
+        <!--  Post Head-->
+        <header>
+            <h1>Post Title</h1>
+        </header>
+            
+        <!-- Post Content -->
+        <div class="hidden-xs col-sm-1 col-md-2">  
+        </div>
+        
+        <div class="col-xs-12 col-sm-10 col-md-8">
+            <div class="content-holder">
+                
+                <div class="content-description">
+                    <div class="author-avatar">
+                        <img src="assets/pic/logo-mac.jpg" class="img-circle" />
+                    </div>
+                    <div class="author-name">
+                        <h3>Company Name</h3>
+                    </div>
+                    <div class="row blog-info">
+                        <div class="col-xs-12 col-sm-6">
+                            <span class="lead text-muted"><i class="fa fa-clock-o"></i> Published: 37 days ago</span>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <span class="lead text-muted"><i class="fa fa-tags"></i> Total: 20 Stickers</span>
+                        </div>
+                    </div>  
+                </div>
+                
+                <div class="content-body">
+                    <p>Nunc pellentesque odio ac tempus semper. Vivamus congue nulla in ligula vulputate venenatis. Integer porta ut tortor sit amet egestas. Vivamus pharetra tincidunt diam, id feugiat nisi finibus ac. Pellentesque id eros quis libero hendrerit auctor. Phasellus eu orci dui. Suspendisse vehicula nisl vel ante lobortis consequat. Etiam eget odio lacinia, vehicula enim non, scelerisque sapien. Mauris sollicitudin tortor commodo eleifend suscipit. Pellentesque sit amet finibus lectus. Sed eu est lacinia, suscipit metus nec, pretium leo.</p>
+                    <p>
+                </div>
 
-    				<!-- <div class="col-md-12"> -->
-<!--     					<div class="thumbnail">
-    						<a href="#"><img src="http://www.istanbluegayrimenkul.com/wp-content/uploads/2014/05/image6.jpg" alt=""/></a>
-    					</div> -->
-    					<div class="icerik-bilgi">
-    						<a href="#"><h2>Lorem ipsum dolor sit amet</h2></a>
-    						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum eget nunc quis semper. Nunc pellentesque nec libero sed viverra. Donec turpis velit, suscipit sit amet mauris quis, viverra ornare massa. Morbi tellus eros, fringilla eu sodales id, ultricies ut sapien. Duis et tristique enim, vitae mattis neque. Aliquam efficitur, dui id laoreet blandit, lorem […]</p>
-    						
-    						 <a href = "getPost.html" class="btn btn-primary">
-    							<span class="btn btn-google">Get Sticker!<i class="fa fa-chevron-right"></i></span>
-    						 </a>
-    						 </a>
-    					</div>
-    				<!-- </div> -->
+                <!-- Intro to Table -->
+                <div class="col-lg-12">
+                    <div class="col-sm-1 col-lg-1 col-xs-1"></div>
+                    <div class="col-sm-4 col-lg-10 col-xs-4">
+                        <h1 style="text-align:center;">Hi Guys, Please Check it Out and Become<strong> Part of Us</strong>!</h1>
+                        <br><br>
+                        <div class="table_title">
+                            <p>What's Next?</p>
+                            <hr>
+                            <h1>Below is Our Plan</h1>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-lg-1 col-xs-1"></div>
+                </div>
 
-    			<!-- </div> -->
-    		<!-- </div> -->
+
+                <!-- Table -->
+                <div class="row">
+
+                    <div class="col-sm-1 col-lg-1 col-xs-1"></div>
+
+                    <div class="col-sm-4 col-lg-4 col-xs-4 no-padding" id="removePadding1">
+                        <div class="features-table">
+                            
+                                <h1>Type</h1>
+                                <li>Front Door - Left </li>
+                                <li>Front Door - Right</li>
+                                <li>Back Door - Left</li>
+                                <li>Back Door - Right</li>
+                                <li>Fender - Left</li>
+                                <li>Fender - Right</li>
+                                <li>Hood</li>
+                                <li>Trunk</li>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-lg-3 col-xs-3 no-padding" id="removePadding2">
+                        <div class="features-table-free">
+                            <ul>
+                                <h1>Availability</h1>
+                                <li><i class="fa fa-check"></i></li>
+                                <li><i class="fa fa-check"></i></li>
+                                <li><i class="fa fa-check"></i></li>
+                                <li><i class="fa fa-check"></i></li>
+                                <li><i class="fa fa-check"></i></li>
+                                <li><i class="fa fa-check"></i></li>
+                                <li><i class="fa fa-check"></i></li>
+                                <li><i class="fa fa-check"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                     <div class="col-sm-3 col-lg-3 col-xs-3" id="removePadding3">
+                         <div class="features-table-paid">
+                            <ul>
+                                <h1>$/Month</h1>
+                                <li><i class="fa ">$35</i></li>
+                                <li><i class="fa ">$35</i></li>
+                                <li><i class="fa ">$35</i></li>
+                                <li><i class="fa ">$35</i></li>
+                                <li><i class="fa ">$35</i></li>
+                                <li><i class="fa ">$35</i></li>
+                                <li><i class="fa ">$35</i></li>
+                                <li><i class="fa ">$35</i></li>
+                            </ul>
+                        </div>
+                     </div>
+                     <div class="col-sm-1 col-lg-1 col-xs-1"></div>
+
+                </div>
+
+                <!-- Button -->
+                <div class="col-lg-12">
+                    <br><br><br>
+                    <div class="submit-wrapper" style="text-align:center;">
+                        <a href="#" id="addCarButton">GET STICKER!</a>   
+                    </div>
+                    <br><br><br>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hidden-xs col-sm-1 col-md-2">
 
         </div>
-            <div class="left-panel">
-        <div class="col-xs-12 col-sm-6 col-lg-2">
-            <div class="panel panel-default">
-    		    <div class="panel-body">
-    				<div class="col-md-12">
-    					<div class="icerik-bilgi">
-
-    						<li>Front-Window (Driver Side)</li>
-    						<li>Hood</li>
-    						
-
-    						 </a>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-        </div>
-    <!-- </div> -->
-        <img src="advertisement1.jpg">
-    </div>
-
-
 
     </body>
 </html>
