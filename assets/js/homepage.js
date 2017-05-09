@@ -1,5 +1,7 @@
 
 function init(){
+	//Update nav bar according to user log in info
+	initNavBar();
 	//get data from backend
 	var postData = initGetData();
 	//create & populate post in homepage using data send from backend
@@ -93,3 +95,13 @@ function initGetData(){
  	};
  	return data;
 }
+
+
+function initNavBar(){
+	//Make post request to get whether user is log in if yes change to user Nav bar
+	changeToUserNavBar();
+}
+
+
+
+

@@ -42,12 +42,14 @@ $( "#email" ).focusout(function() {
 	        success: function(response) {
 	            console.log(response);
 	            // Do the thing here!!!
+	            if(response.result === "exist"){
+	            	$("#notification").text($("#email").val()+" is already exist, please try again.");
+					$("#noti").show("slow");
+					document.body.scrollTop = document.documentElement.scrollTop = 0; // scroll to th top of the page
+	            }
 	        },
 	        error: function(response) {
 	            console.log(response);
-	            $("#notification").text($("#email").val()+" is already exist, please try again.");
-				$("#noti").show("slow");
-				document.body.scrollTop = document.documentElement.scrollTop = 0; // scroll to th top of the page
 	        }
 	    });
 	}
@@ -77,12 +79,15 @@ $( "#username" ).focusout(function() {
 	        success: function(response) {
 	            console.log(response);
 	            // Do the thing here!!!
+	            if(response.result === "exist"){
+	            	$("#notification").text($("#username").val()+" is already exist, please try again.");
+					$("#noti").show("slow");
+					document.body.scrollTop = document.documentElement.scrollTop = 0; // scroll to th top of the page
+	            }
 	        },
 	        error: function(response) {
 	            console.log(response);
-	            $("#notification").text($("#username").val()+" is already exist, please try again.");
-				$("#noti").show("slow");
-				document.body.scrollTop = document.documentElement.scrollTop = 0; // scroll to th top of the page
+
 	        }
 	    });
 	}
@@ -127,6 +132,8 @@ $( "#re_password" ).focusout(function() {
 
 $("#submitBtn").on("click",function(){
 	var nameOfUser = $("#firstName").val() +" "+ $("#lastName").val();
+	// window.location.href = "signInPage.html";
+	console.log(window.location.href);
 	$.ajax({
 	        type: "POST",
 	        url: "interface url",
@@ -145,10 +152,12 @@ $("#submitBtn").on("click",function(){
 	        },
 	        success: function(response) {
 	            console.log(response);
-	            // Do the thing here!!!
+	            // Go to Login page
+	            window.location.href = "signInPage.html";
 	        },
 	        error: function(response) {
 	            console.log(response);
+
 	        }
 	    });
 

@@ -88,35 +88,55 @@ $( "#email" ).focusout(function() {
 });
 
 $("#submitBtn").on("click",function(){
-	$("#noti").hide("slow");
-	console.log("HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
-	$( "#editBtn" ).prop( "disabled", cantEdit );
-	cantEdit = true;
-	$( "#submitBtn" ).prop( "disabled", cantEdit );
-	$( "input" ).prop( "disabled", cantEdit );
-	$( "textarea" ).prop( "disabled", cantEdit );
-	// Throw every thing to the DB for update HERE!!!
-	$.ajax({
-        type: "POST",
-        url: "interface url",
-        contentType: "application/json",
-        dataType: "json",
-        data: {
-        	// get the user's information
-			//username: $("#username").val() // get user's id 
-			name: $("#name").val() ,
-			contactNumber: $("#contact_no").val() ,
-			email: $("#email").val(),
-			address: $("#address").val(),
-        },
-        success: function(response) {
-        	// Do the thing here!!!
-            console.log(response);
-            location.reload(); // reload the page
-        },
-        error: function(response) {
-            console.log(response);
-        }
-    });
+	if($("#name").val() === ""){
+		$("#notification").text("Please fill in the Name.");
+		$("#noti").show("slow");
+	}
+	else if($("#contact_no").val() === ""){
+		$("#notification").text("Please fill in Contact number.");
+		$("#noti").show("slow");
+	}
+	else if($("#email").val() === ""){
+		$("#notification").text("Please fill in Email.");
+		$("#noti").show("slow");
+	}
+	else if($("#address").val() === ""){
+		$("#notification").text("Please fill in Address.");
+		$("#noti").show("slow");
+	}
+	else{
+		$("#noti").hide("slow");
+		console.log("HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+		$( "#editBtn" ).prop( "disabled", cantEdit );
+		cantEdit = true;
+		$( "#submitBtn" ).prop( "disabled", cantEdit );
+		$( "input" ).prop( "disabled", cantEdit );
+		$( "textarea" ).prop( "disabled", cantEdit );
+		// Throw every thing to the DB for update HERE!!!
+		$("#noti").hide("slow");
+		$.ajax({
+	        type: "POST",
+	        url: "interface url",
+	        contentType: "application/json",
+	        dataType: "json",
+	        data: {
+	        	// get the user's information
+				//username: $("#username").val() // get user's id 
+				name: $("#name").val() ,
+				contactNumber: $("#contact_no").val() ,
+				email: $("#email").val(),
+				address: $("#address").val(),
+	        },
+	        success: function(response) {
+	        	// Do the thing here!!!
+	            console.log(response);
+	            location.reload(); // reload the page
+	        },
+	        error: function(response) {
+	            console.log(response);
+	        }
+	    });
+	}
+	
 });
 

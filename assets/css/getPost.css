@@ -1,5 +1,5 @@
-body{ 
-    margin-top:40px; 
+.main-content{
+  margin-top: 8%;
 }
 
 .stepwizard-step p {
@@ -47,4 +47,41 @@ body{
   font-size: 12px;
   line-height: 1.428571429;
   border-radius: 15px;
+}
+
+#terms-pane { 
+  width: 80%; 
+  height:200px; 
+  overflow:scroll; 
+  border:1px solid #ccc; 
+  background:#eee; 
+  margin:5px 0; 
+/*  margin:0 auto;*/
+  padding:10px 20px;
+
+}
+
+.stickerPrice{
+  padding-left: 0px;
+}
+
+.selectedStickerCheck{
+  padding-left: 20px;
+
+}
+
+.summarySelectedValue{
+  font-weight: 300;
+}
+
+.bg-success{
+    padding: 15px;
+}
+
+.bg-primary{
+    padding: 10px;
+}
+
+.required-red{
+    color: red;
 }

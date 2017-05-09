@@ -1,82 +1,268 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Get Post</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  	<link rel="stylesheet" type="text/css" href="getPost.css">
-	 
-	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<head>
+        <title>I Saw It</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+        <!-- Optional Bootstrap theme CSS -->
+        <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+
+        <!-- JQuery JS -->
+        <script src="assets/lib/jquery/jquery-3.2.1.min.js"></script>
+
+        <!-- Bootstrap JavaScript JS-->
+        <script src="assets/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+        <!-- Added other librariess and files-->
+        <link rel="stylesheet" href="assets/lib/font-awesome-4.7.0/css/font-awesome.css">
+        <script type="text/javascript" src="assets/js/navbar.js"></script>
+
+    </head>
+    <body>
+    <!-- Nav bar start here -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="homepage.html">ISawIt</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="processPage.html">How it works?</a></li>
+                        <li><a href="aboutUsPage.html">About us</a></li>
+                    </ul>
+                    <ul id="navbarRight" class="nav navbar-nav navbar-right">
+                        <li><a href="signInPage.html">Login</a></li>
+                </div>
+            </div>
+        </nav>
+    <!-- Nav bar End here -->
+
+    <!-- Start adding your link CSS files here -->
+    <link rel="stylesheet" type="text/css" href="assets/css/getPost.css">
+    
+
+    <!-- Linking End here -->
 
 
-  	
-</head>
-<body>
 
-	<div class="container">
-	<div class="stepwizard">
-	    <div class="stepwizard-row setup-panel">
-	        <div class="stepwizard-step">
-	            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-	            <p>Step 1</p>
-	        </div>
-	        <div class="stepwizard-step">
-	            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-	            <p>Step 2</p>
-	        </div>
-	        <div class="stepwizard-step">
-	            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-	            <p>Step 3</p>
-	        </div>
-	    </div>
-	</div>
-	<form role="form">
+	<div class="container main-content">
+
+		<!-- Step Bar -->
+		<div class="stepwizard">
+		    <div class="stepwizard-row setup-panel">
+		        <div class="stepwizard-step">
+		            <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+		            <p>Step 1</p>
+		        </div>
+		        <div class="stepwizard-step">
+		            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+		            <p>Step 2</p>
+		        </div>
+		        <div class="stepwizard-step">
+		            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+		            <p>Step 3</p>
+		        </div>
+		    </div>
+		</div>
+
+		<!-- Step 1 -->
 	    <div class="row setup-content" id="step-1">
 	        <div class="col-xs-12">
 	            <div class="col-md-12">
 	                <h3> Step 1</h3>
-	                <div class="form-group">
-	                    <label class="control-label">First Name</label>
-	                    <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  />
-	                </div>
-	                <div class="form-group">
-	                    <label class="control-label">Last Name</label>
-	                    <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
-	                </div>
+
+				    <div class="form-group">
+		                <label class="control-label">Select a Car</label>
+	                    <select id="comparison" name="comparison" class="form-control">
+	                        <option value="car1">car1</option>
+	                        <option value="car2">car2</option>
+	                        <option value="car3">car3</option>
+	                    </select>
+		            </div>
+	                
 	                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
 	            </div>
 	        </div>
 	    </div>
+
+
 	    <div class="row setup-content" id="step-2">
 	        <div class="col-xs-12">
 	            <div class="col-md-12">
 	                <h3> Step 2</h3>
-	                <div class="form-group">
-	                    <label class="control-label">Company Name</label>
-	                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
+
+	                <!-- Select Sticker -->
+                    <div class="form-group">
+						<label class="control-label">Select Stickers:</label>
+	                    <div class = "row selectedStickerCheck">
+	                        <label class="checkbox-inline col-lg-3" for="notification-0">
+	                            <input type="checkbox" name="notification" id="notification-0" value="1"> Front Door - Left
+	                        </label>
+	                        <label class="col-lg-3 stickerPrice">$15/month</label>
+	                    </div>
+	                    <div class = "row selectedStickerCheck">
+	                        <label class="checkbox-inline col-lg-3" for="notification-0">
+	                            <input type="checkbox" name="notification" id="notification-0" value="1"> Front Door - Right
+	                        </label>
+	                        <label class="col-lg-3 stickerPrice">$15/month</label>
+	                    </div>
+	                    <div class = "row selectedStickerCheck">
+	                        <label class="checkbox-inline col-lg-3" for="notification-0">
+	                            <input type="checkbox" name="notification" id="notification-0" value="1"> Back Door - Left
+	                        </label>
+	                        <label class="col-lg-3 stickerPrice">$15/month</label>
+	                    </div>
+	                    <div class = "row selectedStickerCheck">
+	                        <label class="checkbox-inline col-lg-3" for="notification-0">
+	                            <input type="checkbox" name="notification" id="notification-0" value="1"> Back Door - Right
+	                        </label>
+	                        <label class="col-lg-3 stickerPrice">$15/month</label>
+	                    </div>
+	                    <div class = "row selectedStickerCheck">
+	                        <label class="checkbox-inline col-lg-3" for="notification-0">
+	                            <input type="checkbox" name="notification" id="notification-0" value="1"> Fender - Left
+	                        </label>
+	                        <label class="col-lg-3 stickerPrice">$15/month</label>
+	                    </div>
+	                    <div class = "row selectedStickerCheck">
+	                        <label class="checkbox-inline col-lg-3" for="notification-0">
+	                            <input type="checkbox" name="notification" id="notification-0" value="1"> Fender - Right
+	                        </label>
+	                        <label class="col-lg-3 stickerPrice">$15/month</label>
+	                    </div>
+	                    <div class = "row selectedStickerCheck">
+	                        <label class="checkbox-inline col-lg-3" for="notification-0">
+	                            <input type="checkbox" name="notification" id="notification-0" value="1"> Hood
+	                        </label>
+	                        <label class="col-lg-3 stickerPrice">$15/month</label>
+	                    </div>
+	                    <div class = "row selectedStickerCheck">
+	                        <label class="checkbox-inline col-lg-3" for="notification-0">
+	                            <input type="checkbox" name="notification" id="notification-0" value="1"> Trunk - Left
+	                        </label>
+	                        <label class="col-lg-3 stickerPrice">$15/month</label>
+	                    </div>
+
+	                    <br>
+
+	                    <!-- Preferred Advertising Period -->
+	                    <label class="control-label">Preferred Advertising Period</label>
+	                    <select id="comparison" name="comparison" class="form-control">
+	                        <option value="1">1 Month</option>
+	                        <option value="2">2 Months</option>
+	                        <option value="3">3 Months</option>
+	                        <option value="4">4 Months</option>
+	                        <option value="5">5 Months</option>
+	                        <option value="6">6 Months</option>
+	                        <option value="7">7 Months</option>
+	                        <option value="8">8 Months</option>
+	                        <option value="9">9 Months</option>
+	                        <option value="10">10 Months</option>
+	                        <option value="11">11 Months</option>
+	                        <option value="12">12 Months</option>
+	                    </select>
+	                    <br>
+
+	                    <!-- Term & Condition -->
+	                    <div id="terms-pane" >
+							<h2>Terms and Conditions</h2>
+							
+							<p>This T&Cs template is for use on a website selling digital products. The digital products in question may be ebooks, images, music files, videos or software - their exact nature is immaterial.
+
+							Note, that this template has been designed to cover the use of the website rather than the sale and licensing of the digital products themselves. It should therefore be used in combination with one of our download terms and conditions templates.
+
+							A special section relating to the digital products is included in the T&Cs. This section specifies that the advertising of the digital products on the website is an "invitation to treat" rather than a contractual offer. Accordingly, a contract for the supply of the digital products will only come into force in accordance with the relevant download T&Cs. Second, the section provides that prices for digital products may be incorrectly quoted. Third, it highlights that separate T&Cs will cover the sale and licensing of the digital products. And fourth, it states that digital product reviews submitted to the website are covered by the standard user-content licensing and warranties provisions. (This last provision is optional, and can be removed if there is no opportunity for users to provide reviews of digital products.)
+
+							In addition to this special section, a full range of more general sections are included. These cover such matters as the copyright in website content; the use of the website; the creation, management and deletion of user accounts; the licensing of user content; warranties in relation to user content; reporting abuse; and limitations of liability.
+
+							A disclaimer in relation to third party websites, which may be visited through links on the website, is also included.
+
+							A flexible variation section allows for the T&Cs to be amended by the website operator by: (i) publishing the revised T&Cs on the website; (ii) notifying users; or (iii) both publishing the revised T&Cs and requiring consent from registered users. The most suitable method of variation will depend upon the nature of the website.
+
+							Finally, this template will assist a website operator in making legally-required disclosures under company legislation and ecommerce laws.</p>
+
+		                    <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+								<input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
+								<!-- <input type="submit" name="submit" value="submit" /> -->
+							</form>
+						</div>
+						<br>
+		                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
 	                </div>
-	                <div class="form-group">
-	                    <label class="control-label">Company Address</label>
-	                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address"  />
-	                </div>
-	                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+
 	            </div>
 	        </div>
 	    </div>
+
+	    <!-- Step 3 -->
 	    <div class="row setup-content" id="step-3">
 	        <div class="col-xs-12">
 	            <div class="col-md-12">
 	                <h3> Step 3</h3>
+	                <br>
+
+	                <!-- Order Summary -->
+	                <legend><label>Order Summary</label></legend>
+	                <div>
+	                	<label>Car: <label class="summarySelectedValue"> Car1</label></label>
+	                </div>
+	                <div>
+	                	<label>Selected Sticker: <label class="summarySelectedValue"> Hood $15 per month </label></label>
+	                </div>
+	                <div>
+	                	<label>Advertising Period: <label class="summarySelectedValue"> 5 months</label></label>
+	                </div>
+	                <div>
+	                	<label>Total Income / Month: <label class="summarySelectedValue"> $30</label></label>
+	                </div>
+	                <div>
+	                	<label>Overall Income: <label class="summarySelectedValue"> $150</label></label>
+	                </div>
+	                <h2 class="bg-success">Today's Total: $74.95 AUD</h2>
+
+	                <!-- Account -->
+					<div class="form-group col-md-12 bg-primary">
+			            <label class="control-label">Transferred Account Information</label>
+			        </div>
+
+					<div class="form-group col-md-6">
+		              <span class="required-red">* </span><label class="control-label" >Account Name</label>
+		              <div class="controls">
+		                <input type="text" placeholder="" class="form-control" required="">
+		              </div>
+		            </div>
+		            
+		            <div class="form-group col-md-6">
+		              <span class="required-red">* </span><label class="control-label" for="lastname">Account Number</label>
+		              <div class="controls">
+		                <input type="text" placeholder="" class="form-control" required="">
+		              </div>
+		            </div>
+
+		            <div class="form-group col-md-6">
+		              <span class="required-red">* </span><label class="control-label" >Bank</label>
+		              <div class="controls">
+		                <input type="text" placeholder="" class="form-control" required="">
+		              </div>
+		            </div>
+		            
+		            <div class="form-group col-md-6">
+		              <label class="control-label" for="lastname">Branch</label>
+		              <div class="controls">
+		                <input type="text" placeholder="" class="form-control" required="">
+		              </div>
+		            </div>
+	                
 	                <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
+
 	            </div>
 	        </div>
 	    </div>
-	</form>
+	    <br>
+	    
 	</div>
-	<!--<script type="text/javascript" src="getPost.js"></script>-->
-	<script type="text/javascript" src="signUp.js"></script>
-	
 
-	
+	<script type="text/javascript" src="assets/js/getPost.js"></script>
 </body>
 </html>

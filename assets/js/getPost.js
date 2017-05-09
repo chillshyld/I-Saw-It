@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    // alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy');
 
     var navListItems = $('div.setup-panel div a'),
             allWells = $('.setup-content'),

@@ -2,17 +2,25 @@
 <html>
     <head>
         <title>I Saw It</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- Optional Bootstrap theme CSS -->
+        <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- JQuery JS -->
+        <script src="assets/lib/jquery/jquery-3.2.1.min.js"></script>
+
+        <!-- Bootstrap JavaScript JS-->
+        <script src="assets/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+        <!-- Added other librariess and files-->
+        <link rel="stylesheet" href="assets/lib/font-awesome-4.7.0/css/font-awesome.css">
+        <script type="text/javascript" src="assets/js/navbar.js"></script>
+
     </head>
     <body>
+    <!-- Nav bar start here -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -21,21 +29,277 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
                         <li><a href="processPage.html">How it works?</a></li>
-                        <!--<li><a href="#">Collaboration</a></li>-->
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
                         <li><a href="aboutUsPage.html">About us</a></li>
-                        <!--<li><a href="#">Contact us</a></li>-->
-                        <li><a href="signInPage.html">Login</a></li>
-                        
-                        <!--<li><a href="/">Sign Up</a></li>-->
-                        <!--<li><a href="/">Logout</a></li>-->
                     </ul>
-                    
+                    <ul id="navbarRight" class="nav navbar-nav navbar-right">
+                        <li><a href="signInPage.html">Login</a></li>
                 </div>
             </div>
         </nav>
-	<h1>How does it works</h1>
+    <!-- Nav bar End here -->
+
+    <!-- Start adding your link CSS files here -->
+    <link rel="stylesheet" type="text/css" href="assets/css/processPage.css">
+    <!-- Linking End here -->
+
+
+
+
+
+
+
+
+
+        <!-- Carousel -->
+        <div id="thumbnail-preview-indicators" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#thumbnail-preview-indicators" data-slide-to="0" class="active">
+              <div class="thumbnail">
+                <img class="img-responsive" src="https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg">
+              </div>
+            </li>
+            <li data-target="#thumbnail-preview-indicators" data-slide-to="1">
+            <div class="thumbnail">
+                <img class="img-responsive" src="https://s3.amazonaws.com/ooomf-com-files/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg">
+              </div>
+            </li>
+            <li data-target="#thumbnail-preview-indicators" data-slide-to="2">
+            <div class="thumbnail">
+                <img class="img-responsive" src="https://s3.amazonaws.com/ooomf-com-files/mtNrf7oxS4uSxTzMBWfQ_DSC_0043.jpg">
+              </div>
+            </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item slides active">
+              <div class="slide-1"></div>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>New carousel layout</h1>
+                  <p>Responsive thumbnail preview in carousel indicators.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-2"></div>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-3"></div>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>One more for good measure.</h1>
+                  <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div> 
+
+
+        <!-- Timeline's Content -->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" >
+                    <div class="tab-content"">
+                        <div class="tab-pane fade in active" >
+                            <div class="tab-inner ">                    
+                                <p class="titleBold">HOW IT WORKS?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+
+        <!-- Timeline -->
+		<div class="container">
+		  <div class="row">
+		    <div class="col-lg-12">
+		      
+		      <ul class="timeline">
+
+		        <li>
+		          <div class="timeline-image">
+		            <img class="img-circle img-responsive" src="assets/pic/cat1.jpg" alt="">
+		          </div>
+		          <div class="timeline-panel">
+		            <div class="timeline-heading">
+		              <h4>Step 1</h4>
+		              <h4 class="subheading">Company Registration</h4>
+		            </div>
+		            <div class="timeline-body">
+		              <p class="text-muted">
+		                Company register and become a member on our website.
+		              </p>
+		            </div>
+		          </div>
+		          <div class="line"></div>
+		        </li>
+
+		        <li class="timeline-inverted">
+		          <div class="timeline-image">
+		            <img class="img-circle img-responsive" src="assets/pic/cat2.jpg" alt="">
+		          </div>
+		          <div class="timeline-panel">
+		            <div class="timeline-heading">
+		              <h4>Step 2</h4>
+		              <h4 class="subheading">Car Owner Registration</h4>
+		            </div>
+		            <div class="timeline-body">
+		              <p class="text-muted">
+		                Individual register and become member on our website.
+		              </p>
+		            </div>
+		          </div>
+		          <div class="line"></div>
+		        </li>
+
+		        <li>
+		          <div class="timeline-image">
+		            <img class="img-circle img-responsive"
+		            src="assets/pic/cat3.jpg" alt="">
+		          </div>
+		          <div class="timeline-panel">
+		            <div class="timeline-heading">
+		              <h4>Step 3</h4>
+		              <h4 class="subheading">Create advertisement post</h4>
+		            </div>
+		            <div class="timeline-body">
+		              <p class="text-muted">
+		                Companies fill in an online application for creating an advertisement post which would be posted publicly on our website.
+		              </p>
+		            </div>
+		          </div>
+		          <div class="line"></div>
+		        </li>
+
+		        <li class="timeline-inverted">
+		          <div class="timeline-image">
+		            <img class="img-circle img-responsive" src="assets/pic/cat3.jpg" alt="">
+		          </div>
+		          <div class="timeline-panel">
+		            <div class="timeline-heading">
+		              <h4>Step 4</h4>
+		              <h4 class="subheading">Individual Select Advertisement Post</h4>
+		            </div>
+		            <div class="timeline-body">
+		              <p class="text-muted">
+		                Individual select an advertisement post to be wrapped on his/her car, 
+		                and fill in an application on how they preferred the advertisement to
+		                be posted.
+		              </p>
+		            </div>
+		          </div>
+		          <div class="line"></div>
+		        </li>
+
+		        <li>
+		          <div class="timeline-image">
+		            <img class="img-circle img-responsive" src="assets/pic/cat1.jpg" alt="">
+		          </div>
+		          <div class="timeline-panel">
+		            <div class="timeline-heading">
+		              <h4>Step 5</h4>
+		              <h4 class="subheading">Agreement</h4>
+		            </div>
+		            <div class="timeline-body">
+		              <p class="text-muted">
+		                Individual will have to sign agree to an agreement on putting up the sticker
+		                on his/her car by the selected period of time, will follow all the stated conditions.
+		              </p>
+		            </div>
+		          </div>
+		          <div class="line"></div>
+		        </li>
+		
+
+		        <li class="timeline-inverted">
+		          <div class="timeline-image">
+		            <img class="img-circle img-responsive" src="assets/pic/cat2.jpg" alt="">		          </div>
+		          <div class="timeline-panel">
+		            <div class="timeline-heading">
+		              <h4>Step 6</h4>
+		              <h4 class="subheading">Sticker Production and Wrap</h4>
+		            </div>
+		            <div class="timeline-body">
+		              <p class="text-muted">
+		                I SAW IT will create the specified sticker, and on the selected date the car owner will have to come to the company for 
+		                getting the sticker pasted on his/her car.
+		              </p>
+		            </div>
+		          </div>
+		          <div class="line"></div>
+		        </li>
+
+		        <li>
+		          <div class="timeline-image">
+		            <img class="img-circle img-responsive" src="assets/pic/cat3.jpg" alt="">
+		          </div>
+		          <div class="timeline-panel">
+		            <div class="timeline-heading">
+		              <h4>Step 7</h4>
+		              <h4 class="subheading">Monthly Confirmation and Transaction</h4>
+		            </div>
+		            <div class="timeline-body">
+		              <p class="text-muted">
+		                Monthly confirmation: Individual will have to take a photo of QR code on the sticker to confirm that he/she has not taken it off yet.
+					    After monthly confirmation, a transaction will be made.
+		              </p>
+		            </div>
+		          </div>
+
+		          
+		          
+		        </li>
+
+
+		        
+
+
+		      </ul>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- Technology Tip -->
+		<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+			<div class="offer offer-info">
+				<div class="shape">
+					<div class="shape-text">
+						Tech Tips!							
+					</div>
+				</div>
+				<div class="offer-content">
+					<h3 class="lead">
+						<strong>Special QR Sticker : )</strong>
+					</h3>	
+					<img src="assets/pic/qr.jpg" class="img-responsive">					
+					<p>
+						Scan it for monthly payment!
+						<br> The QR code will be damaged of the sticker is torn off from the car.
+					</p>
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+
+
+	<!-- <h1>How does it works</h1>
 
 	<p>
 		<h3>Overall process</h3>
@@ -115,6 +379,6 @@
 				</ul>
 		</ul>
 	</p>
-	<br><br>
+	<br><br> -->
 	</body>
 </html>

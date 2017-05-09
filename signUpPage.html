@@ -1,36 +1,52 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>I Saw It</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- Optional Bootstrap theme CSS -->
+        <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- JQuery JS -->
+        <script src="assets/lib/jquery/jquery-3.2.1.min.js"></script>
+
+        <!-- Bootstrap JavaScript JS-->
+        <script src="assets/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+        <!-- Added other librariess and files-->
+        <link rel="stylesheet" href="assets/lib/font-awesome-4.7.0/css/font-awesome.css">
+        <script type="text/javascript" src="assets/js/navbar.js"></script>
+
     </head>
     <body>
+    <!-- Nav bar start here -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">ISawIt</a>
+                    <a class="navbar-brand" href="homepage.html">ISawIt</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
-                        <li><a href="/how-it-works">How it works?</a></li>
-                        <!--<li><a href="#">Collaboration</a></li>-->
+                        <li><a href="processPage.html">How it works?</a></li>
+                        <li><a href="aboutUsPage.html">About us</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/about-us">About us</a></li>
-                        <li><a href="/log-in">Login</a></li>
-                    </ul>
-                    
+                    <ul id="navbarRight" class="nav navbar-nav navbar-right">
+                        <li><a href="signInPage.html">Login</a></li>
                 </div>
             </div>
         </nav>
+    <!-- Nav bar End here -->
+
+    <!-- Start adding your link CSS files here -->
+    
+
+    <!-- Linking End here -->
+
+
+
+    
 	<form class="form-horizontal">
 		<div class="alert alert-danger alert-dismissable" id="noti">
 

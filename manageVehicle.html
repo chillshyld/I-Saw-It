@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>I Saw It</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+        <!-- Optional Bootstrap theme CSS -->
+        <link rel="stylesheet" href="assets/lib/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+
+        <!-- JQuery JS -->
+        <script src="assets/lib/jquery/jquery-3.2.1.min.js"></script>
+
+        <!-- Bootstrap JavaScript JS-->
+        <script src="assets/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+        <!-- Added other librariess and files-->
+        <link rel="stylesheet" href="assets/lib/font-awesome-4.7.0/css/font-awesome.css">
+        <script type="text/javascript" src="assets/js/navbar.js"></script>
+
+    </head>
+    <body onload="init()">
+    <!-- Nav bar start here -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="homepage.html">ISawIt</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="processPage.html">How it works?</a></li>
+                        <li><a href="aboutUsPage.html">About us</a></li>
+                    </ul>
+                    <ul id="navbarRight" class="nav navbar-nav navbar-right">
+                        <li><a href="signInPage.html">Login</a></li>
+                </div>
+            </div>
+        </nav>
+    <!-- Nav bar End here -->
+
+    <!-- Start adding your link CSS files here -->
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/manageVehicle.css">
+
+    <!-- Linking End here -->
+
+
+
+
+<!-- Slider -->
+
+	<div class="row">
+		<div class="container">
+			<div id="myCarouselWrapper" class="container-fluid">
+
+				<div id="myCarousel" class="carousel slide" data-interval="false">
+
+				  <!-- <div class="carousel-inner" role="listbox"> -->
+					<div class="carousel-inner" role="listbox">
+
+						<div class="item active">
+						  	<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-4 carInfo">
+								  	<h2>ABC12333</h2>
+								  	<p>Type: <span>4-Wheeled</span></p>
+								  	<p>Brand: <span>Mercedes</span></p>
+								  	<p>Model: <span>E220</span></p>
+						  	</div>
+						  	<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-8">
+						  		<img src="assets/pic/car1.jpg" class="img-responsive">
+						  	</div>
+						</div>
+
+						<div class="item">
+							<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-4 carInfo">
+								  	<h2>ABC22333</h2>
+								  	<p>Type: <span>4-Wheeled</span></p>
+								  	<p>Brand: <span>Mercedes</span></p>
+								  	<p>Model: <span>E220</span></p>
+						  	</div>
+						  	<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-8">
+						  		<img src="assets/pic/car1.jpg" class="img-responsive">
+						  	</div>
+						</div>
+
+						<div class="item">
+							<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-4 carInfo">
+								  	<h2>ABC32333</h2>
+								  	<p>Type: <span>4-Wheeled</span></p>
+								  	<p>Brand: <span>Mercedes</span></p>
+								  	<p>Model: <span>E220</span></p>
+						  	</div>
+						  	<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-8">
+						  		<img src="assets/pic/car1.jpg" class="img-responsive">
+						  	</div>
+						</div>
+
+					</div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>   
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Carousal -->
+	<div class="row">
+		<div class="container">
+
+		    <div id="tabs-home" class="row slider" style="background:#CBDADC no-repeat center fixed;">
+		        <div class="col-sm-3">
+		            <nav class="nav-sidebar">
+		                <ul class="nav tabs">
+		                    <li class="active"><a href="#tab1" data-toggle="tab"><p>FRONT DOOR - LEFT</p></a></li>
+		                    <li class=""><a href="#tab2" data-toggle="tab"><p>FRONT DOOR - RIGHT</p></a></li>
+		                    <li class=""><a href="#tab3" data-toggle="tab"><p>BACK DOOR - LEFT</p></a></li>   
+		                    <li class=""><a href="#tab4" data-toggle="tab"><p>BACK DOOR - RIGHT</p></a></li>  
+		                    <li class=""><a href="#tab5" data-toggle="tab"><p>FENDER - LEFT</p></a></li>  
+		                    <li class=""><a href="#tab6" data-toggle="tab"><p>FENDER - RIGHT</p></a></li>   
+		                    <li class=""><a href="#tab7" data-toggle="tab"><p>HOOD</p></a></li>  
+		                    <li class=""><a href="#tab8" data-toggle="tab"><p>TRUNK</p></a></li> 
+		                </ul>
+		            </nav>
+		        </div>
+		        <!-- tab content -->
+		        <div id="wea" class="col-sm-9 tab-content">
+		        
+		            <div class="tab-pane active text-style fade in active" id="tab1">
+		                <h2>Post Title</h2>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p><strong>Payment per month</strong></p>
+		                <p>Valid Until: x/x/x</p>
+		                <div>
+		                	<a class="btn btn-primary btn-lg" style="float:left; width:25%;padding:5px;">View Post</a>
+		                </div>
+		            </div>
+		            
+		            <div class="tab-pane text-style fade" id="tab2">
+		                <h2>Post Title</h2>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p><strong>Payment per month</strong></p>
+		                <p>Valid Until: x/x/x</p>
+		                <div>
+		                	<a class="btn btn-primary btn-lg" style="float:left; width:25%;padding:5px;">View Post</a>
+		                </div>
+		            </div>
+		            
+		            <div class="tab-pane text-style fade" id="tab3">
+		                <h2>Post Title</h2>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p><strong>Payment per month</strong></p>
+		                <p>Valid Until: x/x/x</p>
+		                <div>
+		                	<a class="btn btn-primary btn-lg" style="float:left; width:25%;padding:5px;">View Post</a>
+		                </div>
+		            </div> 
+		            
+		            <div class="tab-pane text-style fade" id="tab4">
+		                <h2>Post Title</h2>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p><strong>Payment per month</strong></p>
+		                <p>Valid Until: x/x/x</p>
+		                <div>
+		                	<a class="btn btn-primary btn-lg" style="float:left; width:25%;padding:5px;">View Post</a>
+		                </div>
+		            </div> 
+
+		            <div class="tab-pane text-style fade" id="tab5">
+		                <h2>Post Title</h2>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p><strong>Payment per month</strong></p>
+		                <p>Valid Until: x/x/x</p>
+		                <div>
+		                	<a class="btn btn-primary btn-lg" style="float:left; width:25%;padding:5px;">View Post</a>
+		                </div>
+		            </div> 
+
+		            <div class="tab-pane text-style fade" id="tab6">
+		                <h2>Post Title</h2>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p><strong>Payment per month</strong></p>
+		                <p>Valid Until: x/x/x</p>
+		                <div>
+		                	<a class="btn btn-primary btn-lg" style="float:left; width:25%;padding:5px;">View Post</a>
+		                </div>
+		            </div> 
+
+		            <div class="tab-pane text-style fade" id="tab7">
+		                <h2>Post Title</h2>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p><strong>Payment per month</strong></p>
+		                <p>Valid Until: x/x/x</p>
+		                <div>
+		                	<a class="btn btn-primary btn-lg" style="float:left; width:25%;padding:5px;">View Post</a>
+		                </div>
+		            </div> 
+
+		            <div class="tab-pane text-style fade" id="tab8">
+		                <h2>Post Title</h2>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p>Detail overview..klskdlnq/ksnvl</p>
+		                <p><strong>Payment per month</strong></p>
+		                <p>Valid Until: x/x/x</p>
+		                <div>
+		                	<a class="btn btn-primary btn-lg" style="float:left; width:25%;padding:5px;">View Post</a>
+		                </div>
+		            </div>
+		        </div> 
+		    </div>
+		</div>	
+	</div>
+
+	<!-- Add/Remove Car -->
+	<div class="row">
+		<div class="col-md-6 submit-wrapper">
+	    		<a href="#" id="addCarButton">ADD CAR</a>   
+		</div>
+
+		<div class="col-md-6 submit-wrapper">
+		    	 <a href="#" id="removeCarButton">DELETE CAR</a>   
+		</div>
+	</div>
+
+
+<!-- <script type="text/javascript" src="manageVehicle.js"></script> -->
+</body>
+</html>
